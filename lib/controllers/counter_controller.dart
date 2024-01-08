@@ -1,13 +1,17 @@
 import 'package:get/get.dart';
 
 class CounterController extends GetxController {
-  var counter = 0.obs; /* Sama */
-  // RxInt counter = 0; /* Sama */
 
-  var isDark = false.obs;
+  // Cara Kedua menggunakan GetX Reactive 
+  // var count = 0.obs;
+  // void increment() {
+  //   count++;
+  // }
 
-  void changeTheme() => isDark.value = !isDark.value;
-
-  void increment() => counter + 1;
-  void decrement() => counter - 1;
+  // Cara Ketiga menggunakan GetBuilder Simple
+  var count = 0;
+  void increment() {
+    count++;
+    update();
+  }
 }
