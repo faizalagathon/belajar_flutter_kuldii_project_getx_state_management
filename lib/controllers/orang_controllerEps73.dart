@@ -1,4 +1,4 @@
-import '../models/orang.dart';
+import '../models/orangEps73.dart';
 import 'package:get/get.dart';
 
 class OrangController extends GetxController {
